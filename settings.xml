@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<settings name="Daily Currency Rates settings">
+    <proxyUsage>0</proxyUsage>
+    <proxyProtocol>http</proxyProtocol>
+    <proxyString>http://LOGIN:PASSWORD@HOSTNAME</proxyString>
+    <url>http://www.cbr.ru/scripts/XML_daily.asp</url>
+    <dbLogin>LOGIN</dbLogin>
+    <dbPassword>PASSWORD</dbPassword>
+    <dbHost>localhost</dbHost>
+    <dbPort>1521</dbPort>
+    <dbName>XE</dbName>
+    <insetQuery>INSERT QUERY</insetQuery>
+	<checkQuery>CHECK QUERY</checkQuery>
+</settings>
+
+
