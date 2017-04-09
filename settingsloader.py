@@ -1,5 +1,6 @@
 from xml.dom import minidom
 
+
 settings_file = open('Settings.xml','r')
 settings = minidom.parse(settings_file)
 

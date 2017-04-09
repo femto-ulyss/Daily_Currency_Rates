@@ -7,6 +7,7 @@ import os
 class Loader:
 
     def __init__(self):
+        """Load .asp from CBRF and write it into tmp .xml"""
 
         if settingsloader.proxy_usage == 1:
             proxy = request.ProxyHandler({settingsloader.proxy_protocol: settingsloader.proxy_string})
@@ -22,6 +23,7 @@ class Loader:
         self.web_file.close()
 
     def parse_rates_file (self):
+        """Parse tmp xml into list of strings and remove tmp file"""
 
         doc = minidom.parse(self.file_name)
         currency = doc.getElementsByTagName('Valute')

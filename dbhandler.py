@@ -2,7 +2,8 @@ import cx_Oracle
 import settingsloader
 
 
-class Worker:
+class DatabaseHandler:
+    """Database connection and query execution"""
 
     def __init__(self):
 
